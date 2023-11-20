@@ -120,31 +120,3 @@ function prezzo(val2,val3) {
 
 }
 
-// console.log();
-
-// if (nEta < 18) {
-
-//     // Calcolo il 20% del totale
-//     let totS= ( tot * 20) / 100;
-
-//     // Sottraggo il 20 % dal totale
-//     tot = (tot - totS).toFixed(2);
-
-//     console.log(tot);
-
-// }
-
-// else if (nEta > 65) {
-
-//     // Calcolo il 40% del totale
-//     let totS= ( tot * 40) / 100;
-
-//     // Sottraggo il 40 % dal totale
-//     tot = (tot - totS).toFixed(2);
-
-//     console.log(tot);
-
-// }
-
-// // comunico il risultato alla mia pagina html
-// document.getElementById("risultato").innerHTML = "Il biglietto costerà: " + tot +"€";
