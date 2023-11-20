@@ -86,15 +86,14 @@ function makeid(length) {
 function prezzo(val2,val3) {
 
     let eta = val3;
-    
-
+    console.log (eta);
     let Kilo = val2;
 
     let tot = (Kilo * 0.21);
 
     if (eta == "Minorenne") {
 
-        console.log (eta);
+        
         // Calcolo il 20% del totale
         let totS= ( tot * 20) / 100;
         
@@ -105,7 +104,9 @@ function prezzo(val2,val3) {
         
     }
 
-    else if (eta == "Over") {
+    else if (eta == "Over 65") {
+
+        console.log (eta);
 
         //Calcolo il 40% del totale
         let totS= ( tot * 40) / 100;
@@ -116,7 +117,7 @@ function prezzo(val2,val3) {
         return tot;
     }
 
-    return tot;
+    return tot.toFixed(2);;
 
 }
 
