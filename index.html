@@ -14,8 +14,78 @@
 </head>
 <body>
 
+    <!-- Container bootstrap -->
     <div class="container">
-        <h1 id="risultato"></h1>
+
+        <h1>Calcolo il prezzo del tuo biglietto</h1>
+        
+        <!-- mio container -->
+        <div class="Box px-4 text-center">
+
+            <form class="row g-3 mt-4">
+
+                <div class="mb-3 ms-5 col-4">
+                  <label for="exampleInputName" class="form-label ">Nome Cognome</label>
+                  <input type="email" class="form-control NomeCognome" id="exampleInputName">
+                </div>
+
+                <div class="mb-3 col-2">
+                  <label for="exampleInputText" class="form-label">km da percorrere</label>
+                  <input type="number" class="form-control nKilo" id="exampleInputText">
+                </div>
+
+                <div class="mb-3 col-2">
+                    <label for="inputAge" class="form-label ">Fascia d'et&aacute;</label>
+                    <select id="inputAge" class="form-select nEta">
+                      <option selected>Maggiorenne</option>
+                      <option>Minorenne</option>
+                      <option>Over 65</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 col-12">
+                    <button type="submit" class="btn btn-primary" id="calcolo">Calocolo</button>
+                    <button type="submit" class="btn btn-danger" id="cencella">Annulla</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- container (invisibile)-->
+        <div id="none">
+
+            <div class="Box px-4 text-center">
+
+                <h1>Dettagli passeggero</h1>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome passeggero</th>
+                        <th scope="col">Offerta</th>
+                        <th scope="col">Carrozza</th>
+                        <th scope="col">Codice Cp</th>
+                        <th scope="col">Costo biglietto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" id="Dati"></th>
+                        <td id="offerta"></td>
+                        <td>5</td>
+                        <td id="CodiceCp"></td>
+                        <td id="prezzo"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+
+        </div>
+         
+       
+
     </div>
     
     
