@@ -1,0 +1,1 @@
+Esercizio sull'uso del javascript+ html (form) per stampare in pagina informazioni
