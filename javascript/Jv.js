@@ -18,8 +18,6 @@ Scrivere un programma che chieda all’utente:
 // selezione del nome/cognome
 const NoCo = document.querySelector(".NomeCognome");
 
-console.log (NoCo);
-
 // selezione del numero di chilometri
 const nKilo = document.querySelector(".nKilo");
 
