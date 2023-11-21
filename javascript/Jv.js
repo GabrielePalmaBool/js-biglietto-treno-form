@@ -18,6 +18,8 @@ Scrivere un programma che chieda all’utente:
 // selezione del nome/cognome
 const NoCo = document.querySelector(".NomeCognome");
 
+console.log (NoCo);
+
 // selezione del numero di chilometri
 const nKilo = document.querySelector(".nKilo");
 
@@ -37,7 +39,7 @@ calcButton.addEventListener("click",
     function() {
 
         let val1 = NoCo.value;
-       
+        console.log (val1);
         let val2 = nKilo.value;
         
         let val3 = nEta.value;
@@ -73,7 +75,7 @@ delButton.addEventListener("click",
 // Funzione per il calcolo di una stringa random
 function makeid(length) {
     let result = '';
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const characters = 'ABCDEFG0123456';
     const charactersLength = characters.length;
     let counter = 0;
     while (counter < length) {
@@ -86,7 +88,7 @@ function makeid(length) {
 function prezzo(val2,val3) {
 
     let eta = val3;
-    console.log (eta);
+   
     let Kilo = val2;
 
     let tot = (Kilo * 0.21);
@@ -98,7 +100,7 @@ function prezzo(val2,val3) {
         let totS= ( tot * 20) / 100;
         
         // Sottraggo il 20 % dal totale
-        tot = (tot - totS).toFixed(2);
+        tot = (tot - totS).toFixed(2) + " €";
         
         return tot;
         
@@ -112,12 +114,12 @@ function prezzo(val2,val3) {
         let totS= ( tot * 40) / 100;
         
         // Sottraggo il 40 % dal totale
-        tot = (tot - totS).toFixed(2);
+        tot = (tot - totS).toFixed(2) + " €";
 
         return tot;
     }
 
-    return tot.toFixed(2);;
+    return tot.toFixed(2);
 
 }
 
