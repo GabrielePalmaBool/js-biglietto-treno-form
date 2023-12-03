@@ -117,7 +117,7 @@ function prezzo(val2,val3) {
         return tot;
     }
 
-    return tot.toFixed(2);
+    return tot.toFixed(2)+ " €";
 
 }
 
